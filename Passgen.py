@@ -7,7 +7,8 @@ if len(sys.argv)>1:
 password=""
 
 for i in range(numchars):
-    charcode=random.randrange(0,25) + ord('a')
+    ordinal=random.randrange(0,51)
+    charcode=ordinal + 65
     password+=chr(charcode)
 
 print(password)
