@@ -1,6 +1,9 @@
 import random
+import sys
 
-numchars=20
+numchars=10
+if len(sys.argv)>1:
+    numchars=int(sys.argv[1])
 password=""
 
 for i in range(numchars):
